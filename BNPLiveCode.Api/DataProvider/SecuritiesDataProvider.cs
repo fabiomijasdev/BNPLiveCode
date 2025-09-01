@@ -8,11 +8,11 @@
         {
             _httpClient = httpClient;
         }
-       
+
 
         public async Task<decimal> GetSecurityByIsinAsync(string isin)
         {
-            var response = await _httpClient.GetAsync($"url.com/{isin}");
+            var response = await _httpClient.GetAsync($"securityprice/{isin}");
             response.EnsureSuccessStatusCode();
 
             return await response.Content.ReadFromJsonAsync<decimal>();
