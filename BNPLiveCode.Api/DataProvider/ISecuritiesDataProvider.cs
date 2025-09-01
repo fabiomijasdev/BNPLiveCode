@@ -2,5 +2,5 @@
 
 public interface ISecuritiesDataProvider
 {
-    decimal GetSecurityByIsin(string isins);
+    Task<decimal> GetSecurityByIsinAsync(string isin);
 }

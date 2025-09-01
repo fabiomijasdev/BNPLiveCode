@@ -8,10 +8,14 @@
         {
             _httpClient = httpClient;
         }
+       
 
-        public decimal GetSecurityByIsin(string isin)
+        public async Task<decimal> GetSecurityByIsinAsync(string isin)
         {
-            return _httpClient.GetFromJsonAsync<decimal>($"url.com/{isin}").Result;
+            var response = await _httpClient.GetAsync($"url.com/{isin}");
+            response.EnsureSuccessStatusCode();
+
+            return await response.Content.ReadFromJsonAsync<decimal>();
         }
     }
 }

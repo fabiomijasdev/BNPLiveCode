@@ -21,7 +21,7 @@ namespace BNPLiveCode.Api.Features.Services
 
             foreach (var isin in isins)
             {
-                var response = _securitiesDataProvider.GetSecurityByIsin(isin);
+                var response = await _securitiesDataProvider.GetSecurityByIsinAsync(isin);
 
                 var security = new Security
                 {
