@@ -1,0 +1,6 @@
+@BNPLiveCode.Api_HostAddress = http://localhost:5285
+
+GET {{BNPLiveCode.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

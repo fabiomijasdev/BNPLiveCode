@@ -5,9 +5,31 @@ VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BNPTestProject", "BNPTestProject\BNPTestProject.csproj", "{C4F62D68-6FE0-4612-86FC-76ACB2FC3289}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BNPLiveCode.Api", "BNPLiveCode.Api\BNPLiveCode.Api.csproj", "{C2DB6D21-93EB-4135-8A05-D668C4E13AB9}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4F62D68-6FE0-4612-86FC-76ACB2FC3289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F62D68-6FE0-4612-86FC-76ACB2FC3289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F62D68-6FE0-4612-86FC-76ACB2FC3289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F62D68-6FE0-4612-86FC-76ACB2FC3289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DB6D21-93EB-4135-8A05-D668C4E13AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DB6D21-93EB-4135-8A05-D668C4E13AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DB6D21-93EB-4135-8A05-D668C4E13AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DB6D21-93EB-4135-8A05-D668C4E13AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C4F62D68-6FE0-4612-86FC-76ACB2FC3289} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C2DB6D21-93EB-4135-8A05-D668C4E13AB9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF4A213E-1324-4AF4-A728-205B39249FBC}
